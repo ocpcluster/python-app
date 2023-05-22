@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-app
+  description: test
+  annotations:
+    argocd/app-name: python-app
+    backstage.io/kubernetes-id: python-app
+    backstage.io/kubernetes-namespace: python-app
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: ocpcluster/python-app
+spec:
+  type: website
+  lifecycle: production
+  owner: "group:default/janus-authors"
